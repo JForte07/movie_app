@@ -18,5 +18,5 @@ git clone https://github.com/JForte07/movie_app.git
 
 Once it's done, to run the app locally : 
 ```
-streamlit run app.py
+streamlit run main.py
 ```
