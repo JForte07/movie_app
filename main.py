@@ -1,10 +1,9 @@
-from Movie_module.api_request import APIRequest
-from Movie_module.input_text import InputText
+import streamlit as st
+from app import home_page
 
-movie_title = InputText.input_text()
-#print(movie_title)
-Id = APIRequest.get_id(movie_title)
-casting = APIRequest.get_cast(Id)
-rank = APIRequest.get_rank(Id)
-
-print(Id,casting,rank)
+st.set_page_config(
+    page_title="Movie App",
+    page_icon="🎬",
+)
+# Call the homepage function
+st = home_page(st)
